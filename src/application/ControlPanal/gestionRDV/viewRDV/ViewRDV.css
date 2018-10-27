@@ -1,0 +1,75 @@
+
+#root_viewRDV{
+	-fx-background-color: #212121;
+}
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+   -fx-font-size: 15px;
+	-fx-font-weight:700; 
+	-fx-text-fill: #212121;
+	-fx-border-color: #212121;
+	
+}
+
+.table-row-cell:hover{
+
+	-fx-background-color: #FFEE58;
+}
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #E0E0E0;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #c2bfbf;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+.table-row-cell:selected {
+    -fx-background-color: #F9A825;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+.table-view .column-header,
+.table-view .column-header .filler,
+.table-view .column-header-background .filler {
+    -fx-background-color: #0277BD;
+    -fx-border-color: #212121;
+    -fx-text-fill: white;
+     -fx-font-size: 15px;
+	-fx-font-weight:700; 
+}
+.date-picker{
+	
+	-fx-font-size: 22px;
+	-fx-font-family: Ubuntu Condensed;
+	-fx-text-fill: white;
+}
+.text-field{
+	-fx-text-fill: white;
+}
+.date-picker:hover{
+	-fx-scale-x: 1.07;
+	-fx-scale-y: 1.07;
+}
+
+.button{
+-fx-background-color :#1E88E5;
+-fx-text-fill:black;
+
+}
+.button:hover{
+	-fx-background-color :#1565C0;
+	-fx-scale-x: 1.07;
+	-fx-scale-y: 1.07;
+}
+
+
+

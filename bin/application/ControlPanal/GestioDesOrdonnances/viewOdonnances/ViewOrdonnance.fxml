@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="view_ord" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.GestioDesOrdonnances.viewOdonnances.ViewOrdonnanceControler">
+   <children>
+      <TableView fx:id="ordonnance_info" layoutX="32.0" layoutY="360.0" prefHeight="276.0" prefWidth="786.0">
+        <columns>
+          <TableColumn fx:id="numero_Ord" prefWidth="75.0" text="Ordonnace ID" />
+          <TableColumn fx:id="nom" prefWidth="75.0" text="Nom" />
+            <TableColumn fx:id="prenom" prefWidth="75.0" text="Prénom" />
+            <TableColumn fx:id="date_naissance" prefWidth="75.0" text="Date de Naissance" />
+            <TableColumn fx:id="date_Ord" prefWidth="75.0" text="Date de l'orodonnance" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXTextField fx:id="nom_input" focusColor="#f84e4e" labelFloat="true" layoutX="44.0" layoutY="114.0" promptText="Nom" unFocusColor="#3fab90">
+         <font>
+            <Font name="Ubuntu Condensed" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="prenom_input" focusColor="#f84e4e" labelFloat="true" layoutX="295.0" layoutY="114.0" promptText="Prénom" unFocusColor="#3fab90">
+         <font>
+            <Font name="Ubuntu Condensed" size="22.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="ouvrir" buttonType="RAISED" disable="true" layoutX="673.0" layoutY="96.0" onAction="#ouvrir" prefHeight="35.0" prefWidth="100.0" ripplerFill="#63b9a3" text="Ouvrir" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="fermer" buttonType="RAISED" layoutX="673.0" layoutY="224.0" onAction="#fermer" prefHeight="35.0" prefWidth="100.0" ripplerFill="#63b9a3" text="Fermer" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXDatePicker fx:id="date" defaultColor="#33a186" layoutX="44.0" layoutY="188.0" prefHeight="35.0" prefWidth="343.0" promptText="Date de L'ordonnance M/J/A" />
+      <Label fx:id="label" layoutX="53.0" layoutY="24.0" text="Chercher D'une Ordonnance" textFill="#359a81">
+         <font>
+            <Font name="Ubuntu Condensed" size="41.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="chercher" buttonType="RAISED" defaultButton="true" layoutX="673.0" layoutY="160.0" onAction="#Seaarch_By_Name" prefHeight="35.0" prefWidth="100.0" ripplerFill="#63b9a3" text="Chercher" textAlignment="JUSTIFY">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

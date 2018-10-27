@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ordonnance_root" prefHeight="650.0" prefWidth="1250.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.GestioDesOrdonnances.faireOrdonnances.AjouterOrdonnaceController">
+   <children>
+      <Label layoutX="38.0" layoutY="23.0" text="Ordonnance" textAlignment="JUSTIFY" textFill="#f9a825">
+         <font>
+            <Font name="Ubuntu Condensed" size="46.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nom" focusColor="#f9a825" labelFloat="true" layoutX="347.0" layoutY="31.0" prefHeight="38.0" prefWidth="250.0" promptText="Nom de Patient" unFocusColor="#f57f17">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="dateofbirth" defaultColor="#f9a825" layoutX="631.0" layoutY="34.0" prefHeight="28.0" prefWidth="196.0" promptText="Date Of Birth M/J/A" />
+      <JFXTextField fx:id="nom_medicament" focusColor="#f9a825" labelFloat="true" layoutX="27.0" layoutY="126.0" prefWidth="250.0" promptText="Nom de Médicament" unFocusColor="#f57f17">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="forme" focusColor="#f9a825" labelFloat="true" layoutX="27.0" layoutY="194.0" prefHeight="43.0" prefWidth="250.0" promptText="Forme" unFocusColor="#f57f17" />
+      <JFXComboBox fx:id="dosage" focusColor="#f9a825" labelFloat="true" layoutX="22.0" layoutY="270.0" prefHeight="43.0" prefWidth="250.0" promptText="Dosage" unFocusColor="#f57f17" />
+      <JFXComboBox fx:id="quant" focusColor="#f9a825" labelFloat="true" layoutX="22.0" layoutY="341.0" prefHeight="43.0" prefWidth="250.0" promptText="Quantité" unFocusColor="#f57f17" />
+      <JFXTextField fx:id="duree" focusColor="#f9a825" labelFloat="true" layoutX="21.0" layoutY="425.0" prefWidth="250.0" promptText="Durée de Traitement" unFocusColor="#f57f17">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea fx:id="commentaire" focusColor="#f9a825" labelFloat="true" layoutX="19.0" layoutY="490.0" prefHeight="60.0" prefWidth="250.0" promptText="Commentaire" unFocusColor="#f57f17">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXTextArea>
+      <TableView fx:id="ordonnance" layoutX="317.0" layoutY="107.0" prefHeight="456.0" prefWidth="918.0">
+        <columns>
+          <TableColumn fx:id="medecament" prefWidth="75.0" text="Medicament" />
+            <TableColumn fx:id="medicament_forme" prefWidth="75.0" text="Forme" />
+            <TableColumn fx:id="medicament_dosage" prefWidth="75.0" text="Dosage" />
+          <TableColumn fx:id="medicament_quantite" prefWidth="75.0" text="Quantité" />
+            <TableColumn fx:id="dureeDeTrait" prefWidth="75.0" text="Duré du traitement" />
+            <TableColumn fx:id="comment" prefWidth="75.0" text="Commentaire" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="souvegarde" buttonType="RAISED" disable="true" layoutX="209.0" layoutY="584.0" onAction="#souvgarde" ripplerFill="#fbc02d" text="Sauvegarder" textAlignment="CENTER" textFill="#fcf5f5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="impremer" buttonType="RAISED" disable="true" layoutX="401.0" layoutY="584.0" onAction="#imprimer" prefHeight="39.0" prefWidth="132.0" ripplerFill="#fbc02d" text="Imprimer" textAlignment="CENTER" textFill="#fcf5f5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="fermer" buttonType="RAISED" layoutX="44.0" layoutY="584.0" onAction="#fermer" prefHeight="39.0" prefWidth="132.0" ripplerFill="#fbc02d" text="Fermer" textAlignment="CENTER" textFill="#fcf5f5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

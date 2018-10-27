@@ -1,0 +1,82 @@
+#root{
+	
+	-fx-background-image: url(ControlPanalImage/Stethoscope.jpg);
+	-fx-background-size: 100%;
+	-fx-background-repeat: no-repeat;
+	/*-fx-background-color: #131418;*/
+		
+}
+#top_Pane{
+	-fx-background-color:  #006064;
+}
+#image{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/exitwhite.png);
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 45%;
+	-fx-background-position: center;
+}
+#imagemedicament{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/medicine-4.png);
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 48%;
+	-fx-background-position: center;
+}
+#ordoImage{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/document.png);
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 52%;
+	-fx-background-position: center;
+}
+#imageRDV{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/medical-history.png);
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 48%;
+	-fx-background-position: center;
+}
+#EmployeeImage{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/user14.png);
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 45%;
+	-fx-background-position: center;
+}
+#PatientImage{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/Patient.png);
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 40%;
+	-fx-background-position: center;
+}
+
+
+#display_username{
+	-fx-text-fill: #E0E0E0;
+}
+
+#display_username:hover{
+	-fx-underline: true;
+}
+
+#singOut{
+	-fx-background-color :#263238;
+	-fx-text-fill: #E0E0E0;
+}
+
+#singOut:hover{
+	-fx-underline: true;
+	-fx-scale-x: 1.07;
+	-fx-scale-y: 1.07;
+	-fx-background-color : #37474F;
+	
+	
+	
+}
+.button{
+-fx-background-color :#006064;
+-fx-text-fill:#E0E0E0;
+}
+.button:hover{
+	-fx-background-color :#00838F;
+	-fx-scale-x: 1.07;
+	-fx-scale-y: 1.07;
+	
+	
+}

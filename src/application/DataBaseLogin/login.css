@@ -1,0 +1,41 @@
+#stackPane{
+	-fx-background-color: #212121;
+	
+	}
+#imagePanel{
+	 
+	-fx-background-image: url(ImageLogin/BigRocket.png) ;
+	-fx-background-position: top ;
+	-fx-background-size: 100%;
+	-fx-background-repeat: no-repeat;
+}
+#imagePanel:hover{
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+}
+.button{
+	-fx-background-color: #f9a825;
+}
+
+#loginText:hover{
+	-fx-underline: true;
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+}
+.button:hover{
+	-fx-text-fill: black;
+	-fx-background-color :rgb(239,164,0);
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+	
+}
+
+#user_name_input:hover,#password_input:hover{
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+}
+#user_name_input,#password_input{
+	
+	-fx-text-fill: #da2929;
+	
+}

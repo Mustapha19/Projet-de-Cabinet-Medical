@@ -1,0 +1,47 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#border_layout{
+	
+	-fx-background-color :#131418;
+	
+}
+#imagePane{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/adduser.png);
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 100%;
+	-fx-background-position: center;
+}
+#add_word_label:hover{
+	-fx-underline: true;
+	-fx-scale-x: 1.04;
+	-fx-scale-y: 1.04;
+}
+
+.button{
+-fx-background-color :rgb(218,42,42);
+-fx-text-fill:black;
+}
+.button:hover{
+	-fx-background-color :#D32F2F;
+	-fx-underline: true;
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+}
+.text-field{
+	-fx-text-fill: white;
+}
+.text-field:hover{
+	-fx-scale-x: 1.07;
+	-fx-scale-y: 1.07;
+}
+.combo-box .list-cell:selected{
+	-fx-text-fill:white;
+	-fx-font-family: Ubuntu Condensed;
+	
+}
+.combo-box,.date-picker{
+	-fx-font-size: 22px;
+	-fx-font-family: Ubuntu Condensed;
+	-fx-text-fill: white;
+}
+

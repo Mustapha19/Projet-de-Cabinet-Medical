@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="update_medicament" prefHeight="650.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.gestionMedicament.updateOrDeleteMedicament.UpdateOrDeleteMedicamentController">
+   <children>
+      <Label layoutX="32.0" layoutY="14.0" text="Update/Delete Medicament" textAlignment="JUSTIFY" textFill="#006064">
+         <font>
+            <Font name="Ubuntu Condensed" size="45.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nom" focusColor="#006064" labelFloat="true" layoutX="12.0" layoutY="143.0" prefWidth="240.0" promptText="Nom de Scientifique" unFocusColor="#00838f">
+         <font>
+            <Font name="Ubuntu Condensed" size="23.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="marque" focusColor="#006064" labelFloat="true" layoutX="12.0" layoutY="234.0" prefWidth="240.0" promptText="Nom de marque" unFocusColor="#00838f">
+         <font>
+            <Font name="Ubuntu Condensed" size="23.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="forme_medicament" focusColor="#006064" labelFloat="true" layoutX="12.0" layoutY="318.0" prefHeight="37.0" prefWidth="240.0" promptText="Forme" unFocusColor="#00838f" />
+      <JFXTextField fx:id="dosage_medicament" focusColor="#006064" labelFloat="true" layoutX="12.0" layoutY="413.0" prefWidth="240.0" promptText="Dosage" unFocusColor="#00838f">
+         <font>
+            <Font name="Ubuntu Condensed" size="23.0" />
+         </font>
+      </JFXTextField>
+      <TableView fx:id="medicament_list" layoutX="279.0" layoutY="82.0" prefHeight="483.0" prefWidth="1011.0">
+         <columns>
+            <TableColumn fx:id="nom_Internat" prefWidth="75.0" text="nom_Internat" />
+            <TableColumn fx:id="nom_de_marque" prefWidth="75.0" text="nom_de_marque" />
+            <TableColumn fx:id="forme" prefWidth="75.0" text="Forme" />
+            <TableColumn fx:id="dosage" prefWidth="75.0" text="Dosage" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <JFXButton fx:id="supprimer" buttonType="RAISED" disable="true" layoutX="229.0" layoutY="585.0" onAction="#souvgarder" ripplerFill="#034e51" text="Supprimer" textAlignment="CENTER" textFill="#fcf5f5">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="fermer" buttonType="RAISED" cancelButton="true" layoutX="19.0" layoutY="585.0" onAction="#fermer" prefHeight="48.0" prefWidth="150.0" ripplerFill="#034e51" text="Fermer" textAlignment="CENTER" textFill="#fcf5f5">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="update" buttonType="RAISED" disable="true" layoutX="416.0" layoutY="585.0" onAction="#souvgarder" ripplerFill="#034e51" text="Update" textAlignment="CENTER" textFill="#fcf5f5">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="root_viewRDV" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.gestionRDV.viewRDV.ViewRDVController">
+   <children>
+      <JFXDatePicker fx:id="search" defaultColor="#0277bd" layoutX="31.0" layoutY="45.0" prefHeight="33.0" prefWidth="257.0" promptText="chercher Par la date " />
+      <Label fx:id="labelResult" alignment="CENTER" layoutX="316.0" layoutY="50.0" textAlignment="CENTER" textFill="#fffafa">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font></Label>
+      <JFXButton fx:id="chercher" buttonType="RAISED" defaultButton="true" layoutX="858.0" layoutY="41.0" onAction="#search" ripplerFill="#194b83" text="Chercher">
+         <font>
+            <Font name="Ubuntu Condensed" size="22.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="fermer" buttonType="RAISED" cancelButton="true" layoutX="691.0" layoutY="41.0" onAction="#fermer" prefHeight="48.0" prefWidth="117.0" ripplerFill="#194b83" text="Fermer">
+         <font>
+            <Font name="Ubuntu Condensed" size="22.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tableRDV" layoutX="17.0" layoutY="119.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="966.0">
+        <columns>
+          <TableColumn fx:id="patientID" prefWidth="78.0" text="Patien ID" />
+            <TableColumn fx:id="numRDV" prefWidth="78.0" text="Num RDV" />
+          <TableColumn fx:id="lastName" prefWidth="150.0" text="Nom" />
+            <TableColumn fx:id="firstName" prefWidth="164.0" text="Prenom" />
+            <TableColumn fx:id="dateRDV" prefWidth="118.0" text="Date RDV" />
+            <TableColumn fx:id="timeRDV" prefWidth="102.0" text="Heure RDV" />
+            <TableColumn fx:id="commentaire" prefWidth="275.0" text="Commentaire" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

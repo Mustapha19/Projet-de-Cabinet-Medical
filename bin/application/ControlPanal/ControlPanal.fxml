@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="root" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.ControlPanalController">
+   <center>
+      <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="710.0" prefWidth="1368.0">
+         <children>
+            <JFXButton fx:id="gestionPatients" buttonType="RAISED" contentDisplay="RIGHT" layoutX="323.0" layoutY="215.0" onAction="#gestion_Patients" prefHeight="50.0" prefWidth="349.0" ripplerFill="#30ab99" text="Géstion Des Patients">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="PatientImage" contentDisplay="GRAPHIC_ONLY" prefHeight="43.0" prefWidth="118.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="gestionEmployees" buttonType="RAISED" contentDisplay="RIGHT" layoutX="716.0" layoutY="215.0" onAction="#gestion_Employees" prefHeight="50.0" prefWidth="341.0" ripplerFill="#30ab99" text="Géstion Des Employees">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="EmployeeImage" contentDisplay="GRAPHIC_ONLY" prefHeight="56.0" prefWidth="107.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="rendez_vous" buttonType="RAISED" contentDisplay="RIGHT" layoutX="322.0" layoutY="326.0" onAction="#gestionRDV" prefHeight="50.0" prefWidth="350.0" ripplerFill="#30ab99" text="Géstoin des Rendez-vous" wrapText="true">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="imageRDV" alignment="CENTER_RIGHT" contentDisplay="GRAPHIC_ONLY" prefHeight="43.0" prefWidth="94.0" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="gestionMedicament" buttonType="RAISED" contentDisplay="RIGHT" layoutX="714.0" layoutY="326.0" onAction="#gestion_Medicament" prefHeight="50.0" prefWidth="342.0" ripplerFill="#30ab99" text="Géstion Medicamment">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="imagemedicament" contentDisplay="RIGHT" prefHeight="55.0" prefWidth="102.0" textAlignment="RIGHT" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="ordonnance" buttonType="RAISED" contentDisplay="RIGHT" layoutX="319.0" layoutY="428.0" onAction="#gestion_Ordonnances" prefHeight="50.0" prefWidth="353.0" ripplerFill="#30ab99" text="Géstion des Ordonnances">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="ordoImage" alignment="CENTER_RIGHT" contentDisplay="GRAPHIC_ONLY" prefHeight="45.0" prefWidth="89.0" text="Label" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane fx:id="top_Pane" prefHeight="86.0" prefWidth="1376.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="display_username" contentDisplay="CENTER" layoutX="544.0" layoutY="17.0" text="Cabinet Médicale" textAlignment="CENTER" textFill="#1b7a8d">
+               <font>
+                  <Font name="Ubuntu Condensed" size="45.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="singOut" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="1212.0" layoutY="11.0" onAction="#singOut" prefHeight="65.0" prefWidth="138.0" ripplerFill="#e1aeae" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="image" prefHeight="59.0" prefWidth="125.0" textAlignment="CENTER" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

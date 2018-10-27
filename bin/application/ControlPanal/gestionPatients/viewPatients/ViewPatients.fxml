@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="view" prefHeight="650.0" prefWidth="1084.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.gestionPatients.viewPatients.ViewPatientsController">
+   <children>
+      <JFXTextField fx:id="search" focusColor="#e42424" labelFloat="true" layoutX="50.0" layoutY="46.0" prefHeight="25.0" prefWidth="276.0" promptText="Search for Patient" unFocusColor="#e42424">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="close" buttonType="RAISED" cancelButton="true" layoutX="927.0" layoutY="160.0" onAction="#close" prefHeight="48.0" prefWidth="127.0" text="Fermer" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="chercher" buttonType="RAISED" defaultButton="true" layoutX="927.0" layoutY="87.0" onAction="#search_for_patients" prefHeight="48.0" prefWidth="127.0" text="Chercher" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="print" buttonType="RAISED" layoutX="927.0" layoutY="16.0" onAction="#print" prefHeight="25.0" prefWidth="127.0" text="Imprimer" textFill="#fcf9f9">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="patientTable" layoutX="34.0" layoutY="227.0" prefHeight="415.0" prefWidth="1028.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="lastName" minWidth="-1.0" prefWidth="143.0" text="Nom" />
+            <TableColumn fx:id="firstName" minWidth="-1.0" prefWidth="154.0" text="Prénom" />
+            <TableColumn fx:id="dateOfBirth" minWidth="-1.0" prefWidth="149.0" text="Date De Naissance" />
+            <TableColumn fx:id="sexe" minWidth="-1.0" prefWidth="62.0" text="Sexe" />
+            <TableColumn fx:id="blood" minWidth="-1.0" prefWidth="86.0" text="Groupage" />
+            <TableColumn fx:id="phoneNumber" minWidth="-1.0" prefWidth="174.0" text="Numéro De Téléphone" />
+            <TableColumn fx:id="dateOfCreation" maxWidth="1.7976931348623157E308" minWidth="-1.0" prefWidth="274.0" text="Date De Création" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

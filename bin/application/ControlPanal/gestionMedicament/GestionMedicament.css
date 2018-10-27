@@ -1,0 +1,44 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#medicamentPanel,#center_Pane{
+	-fx-background-image: url(ImageeMedicaments/Medicament.jpg); 
+	-fx-background-size: 102%; 
+	-fx-background-repeat: no-repeat ; 
+	
+}
+
+
+#top_Pane{
+	-fx-background-color: #424242 ;
+}
+
+#back{
+	-fx-font-weight: 700;
+	-fx-font-size: 20px;
+	-fx-background-color :#9E9E9E;
+	-fx-text-fill: #212121;
+}
+
+#back:hover{
+	-fx-underline: true;
+	-fx-scale-x: 1.07;
+	-fx-scale-y: 1.07;
+	-fx-background-color :#BDBDBD;	
+}
+.button{
+-fx-background-color :#424242;
+-fx-text-fill:#E0E0E0;
+}
+.button:hover{
+	-fx-background-color :#616161;
+	-fx-scale-x: 1.07;
+	-fx-scale-y: 1.07;
+	
+	
+}
+#gobackLabel{
+	-fx-background-image: url(/application/ControlPanal/ControlPanalImage/house.png) ;
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 50%;
+	-fx-background-position: center;
+}

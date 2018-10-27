@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DataBaseLogin.LoginControler">
+   <children>
+      <AnchorPane fx:id="root" prefHeight="600.0" prefWidth="700.0">
+         <children>
+            <Label fx:id="loginText" layoutX="248.0" layoutY="38.0" text="Login Please" textAlignment="CENTER" textFill="#f82b2b">
+               <font>
+                  <Font name="Ubuntu Condensed" size="44.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="user_name_input" focusColor="#f82b2b" labelFloat="true" layoutX="200.0" layoutY="313.0" prefHeight="25.0" prefWidth="301.0" promptText="Nom de l'utilisateur" unFocusColor="#da2929">
+               <font>
+                  <Font name="Ubuntu Condensed" size="25.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="password_input" focusColor="#da2929" labelFloat="true" layoutX="200.0" layoutY="394.0" prefHeight="25.0" prefWidth="301.0" promptText="Mot de Pass" unFocusColor="#f82b2b">
+               <font>
+                  <Font name="Ubuntu Condensed" size="25.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="login" buttonType="RAISED" cancelButton="true" layoutX="137.0" layoutY="514.0" onAction="#clsoe" prefHeight="48.0" prefWidth="129.0" ripplerFill="#610d13" text="Fermer" textAlignment="CENTER">
+               <font>
+                  <Font name="Ubuntu Condensed" size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="close" buttonType="RAISED" defaultButton="true" layoutX="438.0" layoutY="514.0" onAction="#check" ripplerFill="#610d13" text="Connecter" textAlignment="CENTER">
+               <font>
+                  <Font name="Ubuntu Condensed" size="25.0" />
+               </font>
+            </JFXButton>
+            <Pane fx:id="imagePanel" layoutX="250.0" layoutY="89.0" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

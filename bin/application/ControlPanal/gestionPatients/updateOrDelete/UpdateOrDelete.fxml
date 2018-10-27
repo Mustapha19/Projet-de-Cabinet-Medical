@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="updateRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.gestionPatients.updateOrDelete.UpdateOrDelController">
+   <children>
+      <Label fx:id="add_word_label" alignment="CENTER" layoutX="36.0" layoutY="14.0" prefHeight="39.0" prefWidth="482.0" text="Update / Delete Un Pateints" textAlignment="CENTER" textFill="#da2a2a">
+         <font>
+            <Font name="Ubuntu Condensed" size="42.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="nom" focusColor="#da2a2a" labelFloat="true" layoutX="60.0" layoutY="95.0" prefHeight="39.0" prefWidth="227.0" promptText="Nom" unFocusColor="#e24a4a">
+         <font>
+            <Font name="Ubuntu Condensed" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="prenom" focusColor="#da2a2a" labelFloat="true" layoutX="348.0" layoutY="95.0" prefHeight="39.0" prefWidth="227.0" promptText="Prénom" unFocusColor="#e24a4a">
+         <font>
+            <Font name="Ubuntu Condensed" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXDatePicker fx:id="date" defaultColor="#da2a2a" layoutX="622.0" layoutY="95.0" prefHeight="39.0" prefWidth="321.0" promptText="Date de naissance  M/J/A" showWeekNumbers="true" />
+      <JFXComboBox fx:id="gender" focusColor="#da2a2a" labelFloat="true" layoutX="61.0" layoutY="200.0" prefHeight="44.0" prefWidth="227.0" promptText="Sexe" unFocusColor="#e24a4a" />
+      <JFXComboBox fx:id="groupage" focusColor="#da2a2a" labelFloat="true" layoutX="349.0" layoutY="200.0" prefHeight="44.0" prefWidth="227.0" promptText="Groupage" unFocusColor="#e24a4a" />
+      <JFXTextField fx:id="telephone" focusColor="#da2a2a" labelFloat="true" layoutX="623.0" layoutY="205.0" prefHeight="39.0" prefWidth="240.0" promptText="Numéro de télephone" unFocusColor="#e24a4a">
+         <font>
+            <Font name="Ubuntu Condensed" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="close" buttonType="RAISED" cancelButton="true" layoutX="1015.0" layoutY="240.0" onAction="#close" prefHeight="48.0" prefWidth="131.0" ripplerFill="#d66d6d" text="Annuler" textFill="#166a75">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="update" buttonType="RAISED" disable="true" layoutX="1015.0" layoutY="66.0" onAction="#update_Patient" prefHeight="48.0" prefWidth="131.0" ripplerFill="#d66d6d" text="Update" textFill="#166a75">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="supprimer" buttonType="RAISED" disable="true" layoutX="1015.0" layoutY="152.0" onAction="#delete_patient" ripplerFill="#d66d6d" text="Supprimer" textFill="#166a75">
+         <font>
+            <Font name="Ubuntu Condensed" size="25.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="patientTable" layoutX="20.0" layoutY="340.0" prefHeight="330.0" prefWidth="1165.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="lastName" minWidth="-1.0" prefWidth="143.0" text="Nom" />
+            <TableColumn fx:id="firstName" minWidth="-1.0" prefWidth="154.0" text="Prénom" />
+            <TableColumn fx:id="dateOfBirth" minWidth="-1.0" prefWidth="149.0" text="Date De Naissance" />
+            <TableColumn fx:id="sexe" minWidth="-1.0" prefWidth="62.0" text="Sexe" />
+            <TableColumn fx:id="blood" minWidth="-1.0" prefWidth="86.0" text="Groupage" />
+            <TableColumn fx:id="phoneNumber" minWidth="-1.0" prefWidth="174.0" text="Téléphone" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</AnchorPane>

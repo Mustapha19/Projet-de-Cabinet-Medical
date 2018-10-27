@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="RdvPanel" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControlPanal.gestionRDV.RDVControlPanalController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="710.0" prefWidth="1379.0">
+         <children>
+            <JFXButton fx:id="viewRDV" buttonType="RAISED" layoutX="493.0" layoutY="241.0" onAction="#view_RDV" prefWidth="380.0" ripplerFill="#ff7043" text="Liste de Rondez-Vous" textFill="#e1dddd">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="addRDV" buttonType="RAISED" layoutX="493.0" layoutY="346.0" onAction="#add_new_RDV" prefHeight="40.0" prefWidth="380.0" ripplerFill="#ff7043" text="Ajouter un nouveau Rendez-Vous" textFill="#e1dddd">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+            <JFXButton fx:id="UDRdv" buttonType="RAISED" layoutX="493.0" layoutY="448.0" onAction="#update_Or_Delete_RDV" prefWidth="380.0" ripplerFill="#ff7043" text="Modifier/Supprimer un Rendez-Vous" textFill="#e1dddd">
+               <font>
+                  <Font size="20.0" />
+               </font></JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Pane fx:id="top_Pane" prefHeight="86.0" prefWidth="1372.0" BorderPane.alignment="CENTER">
+         <children>
+            <JFXButton fx:id="goBack" buttonType="RAISED" contentDisplay="GRAPHIC_ONLY" layoutX="14.0" layoutY="10.0" onAction="#go_BackToControlPanel" prefHeight="65.0" prefWidth="138.0" text=" ">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="image" contentDisplay="GRAPHIC_ONLY" prefHeight="57.0" prefWidth="129.0" />
+               </graphic>
+            </JFXButton>
+            <Label layoutX="482.0" layoutY="17.0" text="Géstion Des Rendez-Vous" textFill="#f2eeee">
+               <font>
+                  <Font name="Ubuntu Condensed" size="45.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </top>
+</BorderPane>
